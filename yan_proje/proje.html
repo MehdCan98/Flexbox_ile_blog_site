@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-image: url(photo-1619410283995-43d9134e7656.jfif);
+      }
+
+      .header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .header * {
+        z-index: 5;
+      }
+
+      .navbar {
+        display: flex;
+        background-color: rgb(184, 177, 90);
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5px 20px;
+        height: 70px;
+        opacity: 0.7;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      .navbar ul {
+        display: flex;
+      }
+
+      .navbar a {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 2rem;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+        margin-right: 5px;
+      }
+
+      .logo {
+        font-size: 3rem;
+        padding: 20px;
+      }
+      .navbar a:hover {
+        border-bottom: 2px solid #fff;
+      }
+
+      /* about */
+
+      .about {
+        display: flex;
+        font-size: 2rem;
+        text-align: center;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .blog {
+        background-color: #e4e1e1;
+        justify-content: space-around;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 10px;
+      }
+
+      .blog:hover {
+        transform: scale(1.2);
+        transition: transform.5s;
+      }
+
+      .footer {
+        text-align: center;
+        background-color: rgb(184, 177, 90);
+        color: #fff;
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <h1 class="logo">MehdiCan</h1>
+        <nav>
+          <ul>
+            <li><a href="">Ana Sayfa</a></li>
+            <li><a href="">Yetenekler</a></li>
+            <li><a href="">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="about">
+        <div class="blog">
+          <h2>HTML</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
+            nostrum sed laborum eaque nobis odio hic sunt modi cum eum.
+          </p>
+        </div>
+        <div class="blog">
+          <h2>CSS</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illum
+            reprehenderit neque recusandae veniam veritatis, consectetur
+            explicabo ullam. Doloremque, at.
+          </p>
+        </div>
+        <div class="blog">
+          <h2>JavaScript</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            non natus tempora labore illum! Repellendus deleniti quam et ad
+            itaque?
+          </p>
+        </div>
+        <div class="blog">
+          <h2>Boostrap</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            non natus tempora labore illum! Repellendus deleniti quam et ad
+            itaque?
+          </p>
+        </div>
+        <div class="blog">
+          <h2>TaypScript</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            non natus tempora labore illum! Repellendus deleniti quam et ad
+            itaque?
+          </p>
+        </div>
+        <div class="blog">
+          <h2>React</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            non natus tempora labore illum! Repellendus deleniti quam et ad
+            itaque?
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <h3>Yasal Hakları Saklıdır</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+          placeat.
+        </p>
+      </footer>
+    </header>
+  </body>
+</html>
